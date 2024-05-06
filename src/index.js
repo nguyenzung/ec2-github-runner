@@ -3,6 +3,8 @@ const gh = require('./gh');
 const config = require('./config');
 const core = require('@actions/core');
 
+console.log('')
+
 function setOutput(label, ec2InstanceId) {
   core.setOutput('label', label);
   core.setOutput('ec2-instance-id', ec2InstanceId);
